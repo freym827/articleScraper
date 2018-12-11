@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/onion.png");
+    background-size: 200px 150px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    height: 80px;
+    background-color: springgreen;
+    z-index: 2;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 52px;
+    margin-top: 0px;
+}
+
+.pagelinks {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+
+.scrape {
+    float: left;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 160px;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.header2 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    background-image: url("images/news3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px auto;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+.name2 {
+    color: springgreen;
+    font-size: 60px;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: 900;
+    text-align: center;
+}
+
+.statusDiv {
+    width: 75%;
+    margin: 0 auto;
+    height: 80px;
+    border-radius: 10px;
+    background-color: springgreen;
+}
+
+.noArt {
+    text-align: center;
+    font-size: 44px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
