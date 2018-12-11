@@ -1,8 +1,20 @@
-$.getJSON("/articles", function(data) {
-    for (var i = 0; i < data.length; i++) {
-      $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-    }
-});
+$(".scrape").on("click", function() {
+  $.ajax({
+    method: "GET",
+    url: "/scrape"
+  }).then(function() {
+    $.getJSON("/articles", function(data) {
+      for (var i = 0; i < data.length; i++) {
+        newdiv = $("<div class= getArticle>")
+        newdiv.append("<p class=\"articleGet\" data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>")
+        savebtn = $("<button>")
+        $("#articles").append(newdiv)
+        $("#articles").append(savebtn)
+      }
+    })
+})
+})
+  
   
 $(document).on("click", "p", function() {
     $("#notes").empty();

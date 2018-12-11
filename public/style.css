@@ -82,3 +82,15 @@ body {
     margin-top: 10px;
     line-height: 1.5;
 }
+
+.getArticle {
+    width: 70%;
+    height: 60px;
+    background-color: springgreen;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 1px;
+}
+.articleGet {
+    text-align: center;
+}
